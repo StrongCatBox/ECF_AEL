@@ -1,0 +1,16 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build
+bin/
+obj/
+
+# Config sensibles
+appsettings.json
+appsettings.*.json
+
+# Autres
+*.log
+*.tmp

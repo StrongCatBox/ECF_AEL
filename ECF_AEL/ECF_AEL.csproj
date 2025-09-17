@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.0-preview1.25257.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\eleves.html" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\javascript\apiConfig.js" />
+    <None Include="wwwroot\javascript\eleves\eleveApi.js" />
+    <None Include="wwwroot\javascript\eleves\eleveService.js" />
+    <None Include="wwwroot\javascript\eleves\eleveUI.js" />
+    <None Include="wwwroot\javascript\eleves\moniteurs\moniteurApi.js" />
+    <None Include="wwwroot\javascript\eleves\moniteurs\moniteurService.js" />
+    <None Include="wwwroot\javascript\eleves\moniteurs\moniteurUI.js" />
+    <None Include="wwwroot\lecons.html" />
+    <None Include="wwwroot\moniteurs.html" />
+    <None Include="wwwroot\sidebar.html" />
+    <None Include="wwwroot\style.css" />
+    <None Include="wwwroot\vehicules.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Vue\" />
+  </ItemGroup>
+
+</Project>

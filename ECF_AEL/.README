@@ -1,0 +1,16 @@
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhostxxx;Database=ECF_AEL;User ID=xx;Password=xxx;TrustServerCertificate=True;Encrypt=False"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
+
+```
