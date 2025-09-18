@@ -2,6 +2,8 @@
 .vs/
 *.user
 *.suo
+*.vsidx
+
 
 # Build
 bin/
@@ -12,5 +14,8 @@ appsettings.json
 appsettings.*.json
 
 # Autres
-*.log
 *.tmp
+
+# Fichiers temporaires
+*.cache
+*.log

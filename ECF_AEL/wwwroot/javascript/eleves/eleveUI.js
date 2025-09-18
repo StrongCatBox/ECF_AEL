@@ -14,11 +14,24 @@ document.getElementById("eleveForm").addEventListener("submit", async (e) => {
   const conduite =
     document.querySelector('input[name="permis"]:checked')?.value === "true";
 
-  try {
-    await creerEleve(nom, prenom, dateNaissance, code, conduite);
-    alert("Élève ajouté avec succès !");
-    document.getElementById("eleveForm").reset();
-  } catch (err) {
-    alert("Erreur : " + err.message);
-  }
+try {
+  await creerEleve(nom, prenom, dateNaissance, code, conduite);
+
+  document.getElementById("eleveToast").classList.remove("bg-danger");
+  document.getElementById("eleveToast").classList.add("bg-success");
+  document.getElementById("eleveToastMessage").textContent = "Élève ajouté avec succès !";
+
+  const toast = new bootstrap.Toast(document.getElementById("eleveToast"));
+  toast.show();
+
+  document.getElementById("eleveForm").reset();
+} catch (err) {
+  document.getElementById("eleveToast").classList.remove("bg-success");
+  document.getElementById("eleveToast").classList.add("bg-danger");
+  document.getElementById("eleveToastMessage").textContent = "Erreur : " + err.message;
+
+  const toast = new bootstrap.Toast(document.getElementById("eleveToast"));
+  toast.show();
+}
+
 });

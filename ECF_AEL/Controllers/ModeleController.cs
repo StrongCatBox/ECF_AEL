@@ -30,5 +30,27 @@ namespace ECF_AEL.Controllers
                 return BadRequest($"Erreur lors de la récupération des modèles : {ex.Message}");
             }
         }
+
+        // POST: api/modeles/ajouter
+
+
+        [HttpPost("ajouter")]
+        public IActionResult AjouterModele([FromBody] ModeleVehicule modeleVehicule)
+        {
+            try
+            {
+                _metier.AjouterModele(modeleVehicule);
+                return Ok("Modele ajouté avec succès");
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erreur serveur : {ex.Message}");
+            }
+        }
+
     }
 }
