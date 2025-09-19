@@ -12,7 +12,7 @@ export async function ajouterEleve(eleve) {
     throw new Error(error);
   }
 
-  // si le back ne renvoie rien -> éviter une erreur de parsing
+  // pour eviter l'erreur de parsing
   return await response.json().catch(() => ({}));
 }
 

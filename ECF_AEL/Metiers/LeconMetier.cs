@@ -39,8 +39,9 @@ namespace ECF_AEL.Metiers
 
             // Vérifie que le creneau existe dans le calendrier
             var creneaux = _calendrierRepository.ListerCreneaux();
-            if (!creneaux.Contains(lecon.DateHeure))
-                throw new Exception("Le créneau choisi n'existe pas dans le calendrier.");
+            // Vérifie que le creneau existe sinon l'ajoute
+            _calendrierRepository.AjouterCreneauSiAbsent(lecon.DateHeure);
+
 
             // Vérifie l'age de l'eleve
             var eleve = _eleveRepository.GetById(lecon.IdEleve);
