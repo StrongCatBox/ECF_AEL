@@ -32,6 +32,13 @@ Fonctionnalités testables :
 - Réserver une leçon :
    -> Ajoute automatiquement la date choisie dans la table CALENDRIER
 
+Certaines fonctionnalités demandées dans le sujet n’ont pas pu être intégrées, principalement à cause d’une incohérence ou d’un manque de données dans la base de données fournie (ECF_AEL.bak).
+
+Par exemple :
+- Les statistiques sur les réussites/échecs ne sont pas possibles, car la table des élèves ne contient pas d’historique détaillé des examens passés. On ne sait que si l’élève a son code ou sa conduite, mais pas le nombre de tentatives.
+- La gestion des jours fériés et de la fermeture du dimanche n’a pas été implémentée directement dans l’application, car la table CALENDRIER ne contient pas d’indicateurs spécifiques.
+
+
 
 Auteur :
 --------
