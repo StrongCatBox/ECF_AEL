@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jeina\\source\\repos\\ECF_AEL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E3C2E62-1E66-40AC-8493-C4912000ADB7}|ECF_AEL\\ECF_AEL.csproj|c:\\users\\jeina\\source\\repos\\ecf_ael\\ecf_ael\\.readme||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5E3C2E62-1E66-40AC-8493-C4912000ADB7}|ECF_AEL\\ECF_AEL.csproj|solutionrelative:ecf_ael\\.readme||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".README",
+              "DocumentMoniker": "C:\\Users\\Jeina\\source\\repos\\ECF_AEL\\ECF_AEL\\.README",
+              "RelativeDocumentMoniker": "ECF_AEL\\.README",
+              "ToolTip": "C:\\Users\\Jeina\\source\\repos\\ECF_AEL\\ECF_AEL\\.README",
+              "RelativeToolTip": "ECF_AEL\\.README",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-19T09:47:59.226Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
