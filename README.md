@@ -22,6 +22,25 @@ Prérequis :
 - SQL Server + SQL Server Management Studio
 - Navigateur moderne (Chrome, Edge, Firefox…)
 
+###IMPORTANT D'AJOUTER FICHIER appsettings.json et mettre ça dedans en changeant le serveur, user et mdp.
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhostxxx;Database=ECF_AEL;User ID=xx;Password=xxx;TrustServerCertificate=True;Encrypt=False"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
+
+```
+
 
 Fonctionnalités testables :
 ---------------------------
@@ -38,6 +57,12 @@ Par exemple :
 - Les statistiques sur les réussites/échecs ne sont pas possibles, car la table des élèves ne contient pas d’historique détaillé des examens passés. On ne sait que si l’élève a son code ou sa conduite, mais pas le nombre de tentatives.
 - La gestion des jours fériés et de la fermeture du dimanche n’a pas été implémentée directement dans l’application, car la table CALENDRIER ne contient pas d’indicateurs spécifiques.
 
+### le fichier avec tous les documents complementaires sont ajoutées
+il contient :
+- diagramme de sequence
+- vocabulaire
+- use case pour la fonction creer une lecon
+- maquettes
 
 
 Auteur :
